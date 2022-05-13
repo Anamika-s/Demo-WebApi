@@ -29,6 +29,22 @@ namespace DemoWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.AddSwaggerGen();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo
+                {
+                    Version = "v1",
+                    Description = "This is test Web Api",
+                    Contact = new Microsoft.OpenApi.Models.OpenApiContact
+                        {
+                         Name="Deepak Kumar",
+                         Email="deepak@gmail.com"
+                    },
+                    Title="My DEMOOOO WEB Api"
+
+                });
+            });
             services.AddScoped<IStudentRepo, StudentRepo>();
             services.AddDbContext<AppDbContext>(op => op.UseSqlServer(Configuration["ConnectionStrings:MyConnection"]));
             services.AddControllers();
@@ -47,6 +63,8 @@ namespace DemoWebApi
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v2/swagger.json", "My DEMOOOO WEB Api")); ;
 
             app.UseEndpoints(endpoints =>
             {

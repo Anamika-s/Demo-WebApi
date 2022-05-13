@@ -21,7 +21,7 @@ namespace DemoWebApi.Controllers
 
         }
 
-
+        [HttpGet]
         public ActionResult<List<Student>> Get()
         {
             if (_repo.Get().Count == 0)

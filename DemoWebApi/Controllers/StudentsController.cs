@@ -2,6 +2,7 @@
 using DemoWebApi.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,16 +15,30 @@ namespace DemoWebApi.Controllers
     public class StudentsController : ControllerBase
     {
         private readonly IStudentRepo _repo;
-
-        public StudentsController(IStudentRepo repo)
+        private readonly ILogger<StudentsController> _logger;
+        static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(StudentsController));
+        public StudentsController(IStudentRepo repo
+            , ILogger <StudentsController> logger)
         {
             _repo = repo;
+            _logger = logger;
 
         }
 
+        [HttpGet]
 
         public List<Student> Get()
         {
+            
+            _logger.LogTrace("This is a trcae");
+            _logger.LogWarning("This is a warning");
+            _logger.LogError("This a error");
+            _logger.LogCritical("Critical ");
+            _logger.LogInformation("Its an info");
+            _logger.LogDebug("Its a debug Message");
+            if (_repo.Get().Count < 10)
+                _log4net.Error("Pl do something imm");
+            _log4net.Debug("Its a debufg message");
             return (_repo.Get());
         }
 

@@ -54,3 +54,10 @@ C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\obj\Debug\net5.0\DemoWebApi.
 C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\obj\Debug\net5.0\ref\DemoWebApi.dll
 C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\obj\Debug\net5.0\DemoWebApi.pdb
 C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\obj\Debug\net5.0\DemoWebApi.genruntimeconfig.cache
+C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\obj\Debug\net5.0\DemoWebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\log4net.config
+C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\log4net.dll

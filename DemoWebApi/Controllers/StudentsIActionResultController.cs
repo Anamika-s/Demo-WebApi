@@ -21,6 +21,7 @@ namespace DemoWebApi.Controllers
 
         }
 
+        [HttpGet]
 
         public IActionResult Get()
         {
