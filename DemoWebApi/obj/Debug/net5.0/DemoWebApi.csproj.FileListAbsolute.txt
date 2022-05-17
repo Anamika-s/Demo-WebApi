@@ -21,7 +21,6 @@ C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\Microsoft.I
 C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
 C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
@@ -61,3 +60,4 @@ C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\Swashbuckle
 C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\obj\Debug\net5.0\DemoWebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\log4net.config
 C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\log4net.dll
+C:\Users\Anamika\source\repos\DemoWebApi\DemoWebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

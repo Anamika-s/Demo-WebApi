@@ -42,6 +42,44 @@ namespace DemoWebApi.Migrations
 
                     b.ToTable("Students");
                 });
+
+            modelBuilder.Entity("DemoWebApi.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Password = "user1",
+                            UserName = "user1"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Password = "user2",
+                            UserName = "user2"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Password = "user3",
+                            UserName = "user3"
+                        });
+                });
 #pragma warning restore 612, 618
         }
     }
